@@ -1,0 +1,150 @@
+:root{
+  --bg-start: #d7d7d7;
+  --bg-end: #ffffff;
+  --panel-start: #9fe2bf;
+  --panel-mid: #cccccc;
+  --panel-end: #2b4e32;
+  --accent: #2b4e32;
+  --muted: #666;
+}
+
+/* Reset sencillo */
+*{box-sizing: border-box}
+html,body{height:100%;}
+body {
+  margin: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(to right, var(--bg-start), var(--bg-end));
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s linear infinite;
+  padding-bottom: 80px; /* espacio para footer fijo */
+  color: #222;
+}
+@keyframes gradientAnimation {0%{background-position:0% 50%}100%{background-position:100% 50%}}
+
+header{
+  background:#555;
+  color: #fff;
+  padding: 12px 20px;
+}
+header h1{margin:0;font-size:1.5rem}
+
+/* Layout principal */
+.wrap{
+  max-width:1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* Contenedor con el reproductor + lista */
+#content{
+  display:flex;
+  gap: 24px;
+  align-items:flex-start;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* Panel del "reproductor" (la caja con la imagen y botones) */
+#base{
+  width: 350px;
+  min-height: 520px;
+  background: linear-gradient(180deg, var(--panel-start), var(--panel-mid), var(--panel-end));
+  border-radius: 12px;
+  padding: 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Imagen principal redonda */
+.superior{
+  width: 80%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-top: 6px;
+  cursor:pointer;
+  transform-origin: center;
+  transition: transform .18s ease;
+}
+.superior:hover{transform: scale(1.06)}
+
+.container{
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.medio{
+  flex: 0 0 calc(33.333% - 12px);
+  max-width: calc(33.333% - 12px);
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+
+/* Panel de lista y reproductor de audio */
+.panel-lista{
+  flex: 1 1 560px;
+  min-width: 260px;
+  max-width: 760px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+#lista .divisor{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.06)}
+#lista h2{font-size:1.15rem;margin:0;color:var(--accent);cursor:pointer}
+#lista p{margin:0;color:var(--muted)}
+
+#reproductorAudio{margin-top:8px;border-radius:8px}
+
+.botonFavorito{width:36px;height:36px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+
+footer{position:fixed;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);color:#fff;padding:10px 12px;text-align:center;font-size:0.95rem}
+
+/* Media queries para pantallas medianas y pequeñas */
+@media (max-width: 1024px){
+  #base{width:320px}
+  .panel-lista{flex-basis:420px}
+}
+
+@media (max-width: 720px){
+  header h1{font-size:1.2rem}
+  #content{flex-direction:column;align-items:center}
+  #base{width:90%;min-height:420px}
+  .panel-lista{width:90%;max-width:900px}
+  .container{gap:10px}
+  #lista .divisor{flex-direction:row;align-items:center}
+  #lista h2{font-size:1rem}
+}
+
+@media (max-width: 420px){
+  body{font-size:14px}
+  .medio{width:72px;height:72px}
+  .logo{border-radius:8px}
+  .superior{max-width:240px}
+  #lista h2{font-size:0.95rem}
+  footer{font-size:0.9rem}
+}

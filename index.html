@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REPRODUCTOR MP3 - Responsive</title>
+  <link href="imagenes/mujer.png" rel="icon" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+<body>
+  <header>
+    <div class="wrap"><h1>Enjoy 1: Reproductor MP3</h1></div>
+  </header>
+
+  <main class="wrap">
+    <div id="content">
+      <aside id="base" aria-label="Panel reproductor">
+        <img id="foto" class="superior" src="imagenes/imagen4.png" alt="Carátula" onclick="aleatorio()">
+
+        <div class="container">
+          <div class="medio"><img class="logo" onclick="mostrarLista('rock')" src="imagenes/rock.png" alt="Rock"></div>
+          <div class="medio"><img class="logo" onclick="mostrarLista('cumbia')" src="imagenes/cumbia.png" alt="Cumbia"></div>
+          <div class="medio"><img class="logo" onclick="mostrarLista('regeton')" src="imagenes/regeton.png" alt="Reguetón"></div>
+        </div>
+
+        <div class="container">
+          <div class="medio"><img class="logo" onclick="mostrarLista('radio')" src="imagenes/radio.png" alt="Radio"></div>
+          <div class="medio"><img class="logo" onclick="mostrarLista('electronica')" src="imagenes/electronica.png" alt="Electrónica"></div>
+          <div class="medio"><img class="logo" onclick="mostrarLista('favoritos')" src="imagenes/favoritos.png" alt="Favoritos"></div>
+        </div>
+
+      </aside>
+
+      <section class="panel-lista" aria-label="Lista de canciones">
+        <div id="reproductorAudio"></div>
+        <div id="lista"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>® Marcos Castiglioni derechos reservados 2023</footer>
+
+  <script src="js.js"></script>
+   
+
+</body>
+</html>
