@@ -119,7 +119,7 @@ function seleccionarMusica(cancion) {
   nuevoAudio.src = rutaCancion;
   nuevoAudio.type= "audio/mpeg"
   nuevoAudio.setAttribute('controls', 'controls');
-  nuevoAudio.style.backgroundColor = '#2b4e32';
+  //nuevoAudio.style.backgroundColor = '#2b4e32';
   //base.style.height= '615px'
   reproductorAudio.innerHTML = '';
   reproductorAudio.appendChild(nuevoAudio);
