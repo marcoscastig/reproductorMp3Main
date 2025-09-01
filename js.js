@@ -7,7 +7,7 @@ const reproductorAudio = document.getElementById('reproductorAudio');
 
 //Listas de reproducción (se pueden agregar aca mas generos, hay que sumar botones)
 const list = {
-  rock: ["pirata","naufrago","vivaLaVida", "nadaEsGratisEnLaVida", "whatsername","marioneta", "laRengaElFinalEsEnDondeParti","elpibedelosastilleros","malaVida","hotelCalifornia","laBestiaElCuarteto"],
+  rock: ["pirata","naufrago","vivaLaVida", "nadaEsGratisEnLaVida", "whatsername","marioneta", "laRengaElFinalEsEnDondeParti","malaVida","hotelCalifornia","laBestiaElCuarteto"],
   cumbia: ["miChicaFina","18KilatesQueVasAHacer","mirameALosOjos","yaTeOlvide","porEsoEstaConmigo","elGucci","elCuisPinata","SiVoyAlBajoSoyYo","elGucciLostOnYou","noVa"],
   regeton: ["fanaticaDeLoSensual", "ellaMeLevanto", "dileATuAmiga","laPregunta","encantadora","elRelojRodrigo","meteleSazon","queTieneLaNoche","telepatia","quienPudiera"],
   electronica: ["panamericano","redLights","infinity","heyNow","nuncaQuise","shineOn","laMosca","fortunateSon","laPrimaLejana","comoAli"],
