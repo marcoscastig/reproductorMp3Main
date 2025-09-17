@@ -9,7 +9,7 @@ const reproductorAudio = document.getElementById('reproductorAudio');
 const list = {
   rock: ["pirata","naufrago","vivaLaVida", "nadaEsGratisEnLaVida", "whatsername","marioneta", "laRengaElFinalEsEnDondeParti","malaVida","hotelCalifornia","laBestiaElCuarteto"],
   cumbia: ["miChicaFina","18KilatesQueVasAHacer","mirameALosOjos","yaTeOlvide","porEsoEstaConmigo","elGucci","elCuisPinata","SiVoyAlBajoSoyYo","elGucciLostOnYou","noVa"],
-  regeton: ["fanaticaDeLoSensual", "ellaMeLevanto", "dileATuAmiga","laPregunta","encantadora","elRelojRodrigo","meteleSazon","queTieneLaNoche","telepatia","quienPudiera"],
+  regeton: ["fanaticaDeLoSensual", "ellaMeLevanto", "dileATuAmiga","laPregunta","encantadora","elRelojRodrigo","meteleSazon","telepatia","quienPudiera"],
   electronica: ["panamericano","redLights","infinity","heyNow","nuncaQuise","shineOn","laMosca","fortunateSon","laPrimaLejana","comoAli"],
   radio: ["borderline","costumbresArgentinas","brujeria","soloUnMomento","caidaLibre","onTopOfTheWorld","musicaDoBrasil","firstWorldProblems","calaveras","lifeIsLife"],
   favoritos: [],
