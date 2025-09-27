@@ -69,7 +69,7 @@ function mostrarLista(genero) {
       const titulo = document.createElement('h2')  
       const imgBoton = document.createElement('img')
       const span2 = document.createElement('p')
-      imgBoton.src = 'imagenes/mas.png'
+      imgBoton.src = 'imagenes/favoritos.png'
       imgBoton.style.height= '35px'
       imgBoton.style.width= '35px'
       imgBoton.style.cursor = 'pointer'
